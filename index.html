@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EPAMTask4</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main>
+    <div class="container">
+        <div class="widget-set">
+            <div class="widget weather">
+                <header class="clearfix">
+                    <span id="weather1City">MADRID</span>
+                    <div>
+                        <button aria-label="options" class="bg-menu_icon"></button>
+                    </div>
+                </header>
+                <div class="widget-body">
+                    <span id="weather1Grad">
+                        24°
+                    </span>
+                    <img src="img/sun.png" alt="Sun">
+                </div>
+                <div  class="timeline">
+                    <div tabindex="0" aria-describedby="weather1City weather1Grad checkedWeather1Time" class="timeline-selector"><div></div></div>
+                    <time datetime="09:00">09:00</time>
+                    <time datetime="12:00" id="checkedWeather1Time">12:00</time>
+                    <time datetime="15:00">15:00</time>
+                    <time datetime="18:00">18:00</time>
+                    <time datetime="21:00">21:00</time>
+                </div>
+            </div>
+            <div class="widget weather">
+                <header class="clearfix">
+                    <span id="weather2City">HIMALAYAS</span>
+                    <div>
+                        <button class="bg-menu_icon" aria-label="options"></button>
+                    </div>
+                </header>
+                <div class="widget-body">
+                    <span id="weather2Grad">
+                        -18°
+                    </span>
+                    <img src="img/snowy_mountains.png" alt="Mountains">
+                </div>
+                <div class="timeline">
+                    <div class="timeline-selector" tabindex="0" aria-describedby="weather2City weather2Grad checkedWeather2Time"><div></div></div>
+                    <time datetime="18:00">18:00</time>
+                    <time datetime="21:00">21:00</time>
+                    <time datetime="24:00">24:00</time>
+                    <time datetime="03:00" id="checkedWeather2Time">03:00</time>
+                    <time datetime="06:00">06:00</time>
+                </div>
+            </div>
+            <div class="widget audio">
+                <header class="clearfix">
+                    <span>NIRVANA</span>
+                    <div>
+                        <span id="trackValue">01:24</span>
+                        <span>/03:55</span>
+                    </div>
+                </header>
+                <div class="widget-body">
+                    <span>Lithium</span>
+                </div>
+                <div class="audio-custom">
+                    <div class="file-progress" tabindex="0" aria-label="if you want to take back on 5 sec press button left,
+                    if you want to skip on 5 sec press button right">
+                        <div class="file-progress-done"></div>
+                        <div class="file-point"><div></div></div>
+                    </div>
+                    <button class="bg-audio-prev" aria-label="previous track"></button>
+                    <button class="bg-audio-pause" aria-label="pause" aria-describedby="trackValue"></button>
+                    <button class="bg-audio-stop" aria-label="stop"></button>
+                    <button class="bg-audio-next" aria-label="next track"></button>
+                    <button class="bg-audio-vol" aria-label="volume"></button>
+                    <button class="bg-audio-shuffle" aria-label="share this track"></button>
+                </div>
+            </div>
+            <div class="widget video">
+                <video poster="img/photo-video.png"></video>
+                <div class="timeline">
+                    <div class="file-progress" tabindex="0" aria-label="if you want to take back on 5 sec press button left,
+                    if you want to skip on 5 sec press button right">
+                        <div class="file-progress-done"></div>
+                        <div class="file-point"><div></div></div>
+                    </div>
+                    <div>
+                        <button class="bg-pause" aria-label="pause" aria-describedby="videoValue"></button>
+                        <div>
+                            <span id="videoValue">03:29</span>
+                            <span>/04:25</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="bg-vol" aria-label="volume"></button>
+                        <div class="vol-size"></div>
+                    </div>
+                    <button class="bg-nax" aria-label="share this video"></button>
+                </div>
+            </div>
+            <div class="widget calendar">
+                <header class="clearfix">
+                    <select>
+                        <option selected>JUNE 2015</option>
+                    </select>
+                    <div>
+                        <button class="bg-plus" aria-label="add event"></button>
+                    </div>
+                </header>
+                <p hidden id="events">some events</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <td aria-describedby="events">MON</td>
+                            <td aria-describedby="events">TUE</td>
+                            <td aria-describedby="events">WED</td>
+                            <td aria-describedby="events">THU</td>
+                            <td aria-describedby="events">FRI</td>
+                            <td aria-describedby="events">SAT</td>
+                            <td aria-describedby="events">SUN</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td aria-describedby="events"></td>
+                            <td aria-describedby="events"></td>
+                            <td aria-describedby="events"></td>
+                            <td aria-describedby="events"></td>
+                            <td aria-describedby="events"><button>1</button></td>
+                            <td aria-describedby="events"><button>2</button></td>
+                            <td aria-describedby="events"><button>3</button></td>
+                        </tr>
+                        <tr>
+                            <td aria-describedby="events"><button>4</button></td>
+                            <td aria-describedby="events"><button>5</button></td>
+                            <td aria-describedby="events"><button>6</button></td>
+                            <td aria-describedby="events"><button>7</button></td>
+                            <td aria-describedby="events"><button>8</button></td>
+                            <td aria-describedby="events"><button>9</button></td>
+                            <td aria-describedby="events"><button>10</button></td>
+                        </tr>
+                        <tr>
+                            <td aria-describedby="events"><button>11</button></td>
+                            <td aria-describedby="events"><button>12</button></td>
+                            <td aria-describedby="events"><button>13</button></td>
+                            <td aria-describedby="events"><button>14</button></td>
+                            <td aria-describedby="events"><button>15</button></td>
+                            <td aria-describedby="events"><button>16</button></td>
+                            <td aria-describedby="events"><button>17</button></td>
+                        </tr>
+                        <tr>
+                            <td aria-describedby="events"><button>18</button></td>
+                            <td aria-describedby="events"><button>19</button></td>
+                            <td aria-describedby="events"><button>20</button></td>
+                            <td aria-describedby="events"><button>21</button></td>
+                            <td aria-describedby="events"><button>22</button></td>
+                            <td aria-describedby="events"><button>23</button></td>
+                            <td aria-describedby="events"><button>24</button></td>
+                        </tr>
+                        <tr>
+                            <td aria-describedby="events"><button>25</button></td>
+                            <td aria-describedby="events"><button>26</button></td>
+                            <td aria-describedby="events"><button>27</button></td>
+                            <td aria-describedby="events"><button>28</button></td>
+                            <td aria-describedby="events"><button>29</button></td>
+                            <td aria-describedby="events"><button>30</button></td>
+                            <td aria-describedby="events"><button>31</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="widget todo">
+                <header class="clearfix">
+                    <span>Got to do ...</span>
+                    <div>
+                        <button class="bg-menu_icon" aria-label="options"></button>
+                    </div>
+                </header>
+                <div class="todo-body">
+                    <div class="btn-add">
+                        <button class="bg-plus" aria-label="add some to do event"></button>
+                    </div>
+                    <div class="todo-body-item" >
+                        <input class="checkbox" aria-checked="false" type="checkbox" id="todo1">
+                        <label for="todo1" class="checkbox-custom"></label>
+                        <label for="todo1">Restaurant reservations</label>
+                    </div>
+                    <div class="todo-body-item">
+                        <input class="checkbox" aria-checked="false" type="checkbox" id="todo2">
+                        <label for="todo2" class="checkbox-custom"></label>
+                        <label for="todo2">Fix the broken door</label>
+                    </div>
+                    <div class="todo-body-item">
+                        <input class="checkbox" aria-checked="false" type="checkbox" id="todo3">
+                        <label for="todo3" class="checkbox-custom"></label>
+                        <label for="todo3">Buy new batteries</label>
+                    </div>
+                </div>
+            </div>
+            <div class="widget remind">
+                <header class="clearfix">
+                    <span>Remind me to ...</span>
+                    <div>
+                        <button class="bg-menu_icon" aria-label="options"></button>
+                    </div>
+                </header>
+                <div class="remind-body">
+                    <div class="btn-add">
+                        <button class="bg-plus" aria-label="add some remind"></button>
+                    </div>
+                    <div class="remind-body-item">
+                        <input class="checkbox" aria-checked="true" type="checkbox" id="remind1">
+                        <label for="remind1" class="bg-alaram checkbox-custom"></label>
+                        <label for="remind1">Pick up the Tickets at 16:00</label>
+                    </div>
+                    <div class="remind-body-item">
+                        <input class="checkbox" aria-checked="true" type="checkbox" id="remind2">
+                        <label for="remind2" class="bg-alaram checkbox-custom"></label>
+                        <label for="remind2">Meeting with David at 17:00</label>
+                    </div>
+                    <div class="remind-body-item">
+                        <input class="checkbox" aria-checked="false" type="checkbox" id="remind3">
+                        <label for="remind3" class="bg-alaram-nonActive checkbox-custom"></label>
+                        <label for="remind3">Send Email to Sarah</label>
+                    </div>
+                </div>
+            </div>
+            <div class="widget notification" tabindex="0" aria-labelledby="notification-name">
+                <header class="clearfix">
+                    <span>FRIDAY</span>
+                    <div>
+                        12.06.15
+                    </div>
+                </header>
+                <div class="notification-body">
+                    <figure>
+                        <img src="img/cake.png" alt="Cake">
+                        <figcaption id="notification-name">James Birthday</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="widget volume">
+                <header>
+                    <span>SALES VOLUME‬‏</span>
+                </header>
+                <div class="volume-body">
+                    <div class="volume-store">
+                        <div class="volume-store-color"></div>
+                        Store A
+                    </div>
+                    <div class="volume-store">
+                        <div class="volume-store-color"></div>
+                        Store B
+                    </div>
+                </div>
+                <footer>
+                    <span>
+                        JUN
+                    </span>
+                    <span>
+                        JUL
+                    </span>
+                    <span>
+                        AUG
+                    </span>
+                </footer>
+            </div>
+            <div class="widget activity">
+                <header class="clearfix">
+                    <span>ACTIVITY</span>
+                    <div class="bg-bicycle" tabindex="0" role="button" aria-label="bicycle"></div>
+                </header>
+                <div class="activity-body clearfix">
+                    <div class="circle" tabindex="0" aria-label="75% of activity">
+                        <img src="img/activityCircle.png" alt="Activity">
+                        <span>75%</span>
+                    </div>
+                    <div class="bg-walking" tabindex="0" role="button" aria-label="walking"></div>
+                </div>
+            </div>
+            <div class="widget rating">
+                <header>
+                    <span>RATING</span>
+                </header>
+                <div class="rating-set">
+                    <div class="rating-item">
+                        <div class="rating-item-line">
+                            <div class="rating-item-line-in"></div>
+                        </div>
+                        <span>1</span>
+                    </div>
+                    <div class="rating-item">
+                        <div class="rating-item-line">
+                            <div class="rating-item-line-in"></div>
+                        </div>
+                        <span>2</span>
+                    </div>
+                    <div class="rating-item">
+                        <div class="rating-item-line">
+                            <div class="rating-item-line-in"></div>
+                        </div>
+                        <span>3</span>
+                    </div>
+                    <div class="rating-item">
+                        <div class="rating-item-line">
+                            <div class="rating-item-line-in"></div>
+                        </div>
+                        <span>4</span>
+                    </div>
+                    <div class="rating-item">
+                        <div class="rating-item-line">
+                            <div class="rating-item-line-in"></div>
+                        </div>
+                        <span>5</span>
+                    </div>
+                    <div class="rating-item">
+                        <div class="rating-item-line">
+                            <div class="rating-item-line-in"></div>
+                        </div>
+                        <span>6</span>
+                    </div>
+                    <div class="rating-item">
+                        <div class="rating-item-line">
+                            <div class="rating-item-line-in"></div>
+                        </div>
+                        <span>7</span>
+                    </div>
+                    <div class="rating-item">
+                        <div class="rating-item-line">
+                            <div class="rating-item-line-in"></div>
+                        </div>
+                        <span>8</span>
+                    </div>
+                    <div class="rating-item">
+                        <div class="rating-item-line">
+                            <div class="rating-item-line-in"></div>
+                        </div>
+                        <span>9</span>
+                    </div>
+                    <div class="rating-item">
+                        <div class="rating-item-line">
+                            <div class="rating-item-line-in"></div>
+                        </div>
+                        <span>10</span>
+                    </div>
+                </div>
+            </div>
+            <div class="widget calc">
+                <input type="text" aria-label="enter your condition">
+                <div class="calc-set">
+                    <button class="calc-key">&#11013</button>
+                    <button class="calc-key">CE</button>
+                    <button class="calc-key">C</button>
+                    <button class="calc-key">&#177</button>
+                    <button class="calc-key">&#9989</button>
+                    <button class="calc-key">7</button>
+                    <button class="calc-key">8</button>
+                    <button class="calc-key">9</button>
+                    <button class="calc-key">/</button>
+                    <button class="calc-key">%</button>
+                    <button class="calc-key">4</button>
+                    <button class="calc-key">5</button>
+                    <button class="calc-key">6</button>
+                    <button class="calc-key">*</button>
+                    <button class="calc-key">1/x</button>
+                    <button class="calc-key">1</button>
+                    <button class="calc-key">2</button>
+                    <button class="calc-key">3</button>
+                    <button class="calc-key">-</button>
+                    <button class="calc-key">
+                            <div>=</div>
+                    </button>
+                    <button class="calc-key">0</button>
+                    <button class="calc-key">.</button>
+                    <button class="calc-key">+</button>
+                </div>
+            </div>
+            <div class="widget clock">
+                <header class="clearfix">
+                    <select tabindex="0">
+                        <option selected>NEW YORK</option>
+                    </select>
+                    <div class="bg-digital_clock" tabindex="0" role="button" aria-label="change time zone"></div>
+                </header>
+                <div class="clock-body" tabindex="0">
+                    <div>11:55</div>
+                    <div>Saturday, June 27 -<span>EDT</span></div>
+                </div>
+            </div>
+            <div class="widget countdown">
+                <header>
+                    <span>STARTS IN</span>
+                </header>
+                <div class="countdown-body" tabindex="0">
+                    <div class="countdown-item">0<span>DAYS</span></div>
+                    <div class="countdown-item">3<span>HOURS</span></div>
+                </div>
+            </div>
+            <div class="widget translate">
+                <form action="">
+                    <input type="text" aria-label="enter text">
+                    <button type="submit" aria-labelledby="languageChange"><div class="bg-translate"></div></button>
+                </form>
+                <div class="result">
+                    <select id="languageChange">
+                        <option selected>English</option>
+                    </select>
+                    <div class="result-text" tabindex="0">
+                        Welcome to Rio de Janeiro
+                    </div>
+                </div>
+            </div>
+            <div class="widget departure">
+                <header class="clearfix">
+                    <span>DEPARTURE</span>
+                    <div class="clearfix">
+                        <button><div class="bg-plane"></div></button>
+                        <button><div class="bg-plane"></div></button>
+                    </div>
+                </header>
+                <div class="departure-body" tabindex="0">
+                    <div class="departure-body-date">28.6</div>
+                    <div class="departure-info">
+                        <div><span>16:15</span><div class="bg-planeBig"></div></div>
+                        <div>
+                            <span>LONDON</span>
+                            <div class="bg-planeLine" tabindex="-1"></div>
+                            <span>TLV</span>
+                        </div>
+                        <div><sapn>GATE 19</sapn><span>FLIGHT - W6 2792</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
